@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FaceSim - Perfil</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">facebook</div>
+        <input type="text" class="search-bar" placeholder="Buscar..." />
+        <nav>
+            <ul>
+                <li><button onclick="navigate('muro')">Muro</button></li>
+                <li><button onclick="navigate('info')">Info</button></li>
+                <li><button onclick="navigate('photos')">Fotos</button></li>
+                <li><button onclick="navigate('boxes')">Cajas</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <!-- Sidebar izquierda -->
+        <aside class="sidebar">
+            <img src="assets/avatar.jpg" alt="Avatar" class="avatar" />
+            <h3>Nombre del Usuario</h3>
+            <ul>
+                <li>Información</li>
+                <li>Amigos</li>
+                <li><a href="#">Ver todo</a></li>
+            </ul>
+            <div class="friends-grid">
+                <img src="assets/foto1.jpg" alt="Amigo">
+                <img src="assets/foto2.jpg" alt="Amigo">
+                <img src="assets/foto3.jpg" alt="Amigo">
+            </div>
+        </aside>
+
+        <!-- Contenido central SPA -->
+        <section id="muro" class="content-section">
+            <div class="post-box">
+                <textarea placeholder="Pon algo aquí..."></textarea>
+                <div class="post-actions">
+                    <button>Adjuntar +</button>
+                    <button class="share-btn">Compartir</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <img src="assets/avatar.jpg" alt="Avatar" class="avatar-small" />
+                    <div>
+                        <strong>Nombre</strong><br>
+                        <span class="post-date">Lunes a las 8:45pm</span>
+                    </div>
+                </div>
+                <p class="post-content">Estudiando para los parciales 😩📚</p>
+                <div class="post-footer">
+                    <button>👍 Me gusta</button>
+                    <button>💬 Comentar</button>
+                    <button>🔁 Compartir</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="info" class="content-section hidden">
+            <h2>Info</h2>
+            <p><strong>Universidad:</strong> Nacional</p>
+            <p><strong>Carrera:</strong> Ingeniería de Sistemas</p>
+            <p><strong>Correo:</strong> estudiante@uni.edu</p>
+            <p><strong>Intereses:</strong> Programación, IA, Fotografía</p>
+        </section>
+
+        <section id="photos" class="content-section hidden">
+            <h2>Fotos</h2>
+            <div class="photo-grid">
+                <img src="assets/foto1.jpg" alt="Foto 1">
+                <img src="assets/foto2.jpg" alt="Foto 2">
+                <img src="assets/foto3.jpg" alt="Foto 3">
+                <img src="assets/foto4.jpg" alt="Foto 4">
+            </div>
+        </section>
+
+        <section id="boxes" class="content-section hidden">
+            <h2>Cajas</h2>
+            <div class="box-grid">
+                <div class="box-card">📘 Logros académicos</div>
+                <div class="box-card">🛠 Proyectos</div>
+                <div class="box-card">🎮 Hobbies</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
