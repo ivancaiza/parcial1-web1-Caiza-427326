@@ -1,0 +1,106 @@
+/* Layout principal */
+.layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background: #e8f0fe;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sidebar .avatar {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.friends-grid {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.friends-grid img {
+    width: 50px;
+    border-radius: 6px;
+}
+
+/* Contenido central */
+.content-section {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Caja para publicar */
+.post-box {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.post-box textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.share-btn {
+    background: #1877f2;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Posts */
+.post {
+    background: #fdfdfd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.post-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.avatar-small {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.post-date {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.post-footer {
+    margin-top: 10px;
+}
+
+.post-footer button {
+    margin-right: 8px;
+}
